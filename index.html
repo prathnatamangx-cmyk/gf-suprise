@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hi mere bhondu girlfriend :)</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #ffe4ec;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background-color: #D5E4AA;
-      width: 100%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-    .frogs {
-      margin: 20px;
-      font-size: 2rem;
-    }
-    iframe {
-      margin-top: 20px;
-      max-width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    footer {
-      margin-top: 30px;
-      padding: 10px;
-      font-style: italic;
-      background-color: #D5E4AA;
-      width: 100%;
-      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hi mere bhondu girlfriend :) here's something cute for you</h1>
-  </header>
 
-  <div class="frogs">🐸💚🐸💚🐸</div>
+  <div class="opening-text">
+    <h1>Hey love,</h1>
+    <p>This is just for you 🐸❤️</p>
+  </div>
 
-  <iframe 
-    src="https://drive.google.com/file/d/1Hmv2a1Q0yFq2pBqZRFSd18UMfFanxz8h/preview" 
-    allow="autoplay">
-  </iframe>
+  <img src="IMG_1263.jpeg" alt="Frog Doodle" class="frog-doodle">
 
-  <div class="frogs">🐸💚🐸💚🐸</div>
+  <div class="closing-text">
+    <p>You make everything better.</p>
+    <p>— With all my love</p>
+  </div>
 
-  <footer>Made with love, from your bengi 💌</footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      for (let i = 0; i < 25; i++) {
+        const heart = document.createElement("img");
+        heart.src = "IMG_1262.png";  // tiny heart image
+        heart.classList.add("floating-heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = 5 + Math.random() * 10 + "s";
+        heart.style.width = "15px";
+        document.body.appendChild(heart);
+      }
+    });
+  </script>
+
 </body>
 </html>
