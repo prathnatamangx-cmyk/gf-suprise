@@ -1,165 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hi mere bhondu girlfriend :)</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hi mere bhondu girlfriend :)</title>
 
-<!-- Letter Gothic Alternative font -->
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
 
-<style>
-  /* Background heart image */
-  body {
-    margin: 0;
-    padding: 20px;
-    background: url('IMG_1262.png') center center / cover no-repeat;
-    font-family: 'Share Tech Mono', monospace;
-    text-align: center;
-    overflow-x: hidden;
-    position: relative;
-    color: #4F4F4F;
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #fff4f7;
+      font-family: 'Share Tech Mono', monospace;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+      color: #4F4F4F;
+    }
 
-  /* Floating tiny hearts container */
-  .heart-container {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-  }
+    h1 {
+      font-weight: normal;
+      font-size: 2rem;
+      color: #6B8E23;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 25px;
+    }
 
-  /* Each floating heart */
-  .heart {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: url('https://i.ibb.co/7vDKfYk/tiny-heart.png') no-repeat center/contain;
-    opacity: 0.8;
-    animation: floatUp linear infinite;
-  }
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 25px;
+      z-index: 1;
+      position: relative;
+    }
 
-  /* Animate hearts floating upward with random speed */
-  @keyframes floatUp {
-    0% {
-      transform: translateY(100vh) scale(1);
+    /* Responsive Vimeo video container */
+    .video-wrapper {
+      position: relative;
+      width: 90%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 15px;
+    }
+
+    .frogs {
+      position: fixed;
+      pointer-events: none;
+      width: 80px;
+      z-index: 2;
+    }
+
+    .frog-top-left { top: 10px; left: 10px; }
+    .frog-top-right { top: 10px; right: 10px; }
+    .frog-bottom-left { bottom: 10px; left: 10px; }
+    .frog-bottom-right { bottom: 10px; right: 10px; }
+
+    .heart-container {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('d4950292-a4a8-4365-8897-e44aae01200a.jpeg') no-repeat center/contain;
       opacity: 0.8;
+      animation: floatUp linear infinite;
     }
-    100% {
-      transform: translateY(-20vh) scale(1.3);
-      opacity: 0;
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-20vh) scale(1.3);
+        opacity: 0;
+      }
     }
-  }
-
-  /* Heading - opening text */
-  h1 {
-    font-weight: normal;
-    font-size: 2rem;
-    color: #6B8E23;
-    z-index: 1;
-    position: relative;
-    margin-bottom: 25px;
-  }
-
-  /* Closing text - bold */
-  p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 25px;
-    z-index: 1;
-    position: relative;
-  }
-
-  /* Responsive iframe container */
-  .iframe-wrapper {
-    position: relative;
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.15);
-  }
-
-  iframe {
-    width: 100%;
-    height: 350px;
-    border: none;
-    display: block;
-  }
-
-  /* Frog doodles */
-  .frogs {
-    position: fixed;
-    pointer-events: none;
-    width: 80px;
-    z-index: 2;
-  }
-  .frog-top-left {
-    top: 10px;
-    left: 10px;
-  }
-  .frog-top-right {
-    top: 10px;
-    right: 10px;
-  }
-  .frog-bottom-left {
-    bottom: 10px;
-    left: 10px;
-  }
-  .frog-bottom-right {
-    bottom: 10px;
-    right: 10px;
-  }
-</style>
+  </style>
 </head>
 <body>
 
-<h1>Hi mere bhondu girlfriend :) here's something cute for you</h1>
+  <h1>Hi mere bhondu girlfriend :) here's something cute for you</h1>
 
-<div class="iframe-wrapper">
-  <iframe 
-    src="https://drive.google.com/file/d/1Hmv2a1Q0yFq2pBqZRFSd18UMfFanxz8h/preview?autoplay=1&mute=1" 
-    allow="autoplay; fullscreen" 
-    allowfullscreen
-  ></iframe>
-</div>
+  <!-- Vimeo video embed -->
+  <div class="video-wrapper">
+    <iframe
+      src="https://player.vimeo.com/video/1108488169"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      title="Cute video for my girlfriend"
+    ></iframe>
+  </div>
 
-<p>Made with love, from your bengi 🐸💚</p>
+  <p>Made with love, from your bengi 🐸💚</p>
 
-<!-- Frog Doodles -->
-<img src="IMG_1263.jpeg" alt="Frog Top Left" class="frogs frog-top-left" />
-<img src="IMG_1263.jpeg" alt="Frog Top Right" class="frogs frog-top-right" />
-<img src="IMG_1263.jpeg" alt="Frog Bottom Left" class="frogs frog-bottom-left" />
-<img src="IMG_1263.jpeg" alt="Frog Bottom Right" class="frogs frog-bottom-right" />
+  <!-- Frog Doodles -->
+  <img src="1c52e24f-2c95-4079-aa9b-cbdff51958dd.jpeg" class="frogs frog-top-left" alt="frog doodle" />
+  <img src="1c52e24f-2c95-4079-aa9b-cbdff51958dd.jpeg" class="frogs frog-top-right" alt="frog doodle" />
+  <img src="1c52e24f-2c95-4079-aa9b-cbdff51958dd.jpeg" class="frogs frog-bottom-left" alt="frog doodle" />
+  <img src="1c52e24f-2c95-4079-aa9b-cbdff51958dd.jpeg" class="frogs frog-bottom-right" alt="frog doodle" />
 
-<!-- Floating hearts container -->
-<div class="heart-container" id="heart-container"></div>
+  <!-- Floating Hearts -->
+  <div class="heart-container" id="heart-container"></div>
 
-<script>
-  // Create multiple floating hearts randomly positioned with random speed & delay
-  const heartContainer = document.getElementById('heart-container');
-  const heartCount = 30; // Number of floating hearts
+  <script>
+    const heartContainer = document.getElementById('heart-container');
+    const heartCount = 30;
 
-  for (let i = 0; i < heartCount; i++) {
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    
-    // Random horizontal start position
-    heart.style.left = Math.random() * 100 + 'vw';
-    // Random animation duration between 5-12 seconds
-    heart.style.animationDuration = (5 + Math.random() * 7) + 's';
-    // Random animation delay
-    heart.style.animationDelay = (Math.random() * 12) + 's';
-    // Random size scaling
-    const scale = 0.7 + Math.random() * 0.6;
-    heart.style.width = 15 * scale + 'px';
-    heart.style.height = 15 * scale + 'px';
-
-    heartContainer.appendChild(heart);
-  }
-</script>
+    for (let i = 0; i < heartCount; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (5 + Math.random() * 7) + 's';
+      heart.style.animationDelay = (Math.random() * 12) + 's';
+      const scale = 0.7 + Math.random() * 0.6;
+      heart.style.width = 20 * scale + 'px';
+      heart.style.height = 20 * scale + 'px';
+      heartContainer.appendChild(heart);
+    }
+  </script>
 
 </body>
 </html>
